@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/edt_1"
+        android:layout_margin="30dp"
+        android:background="@drawable/selector"
+        android:padding="15dp"
+        android:drawableStart="@drawable/ic_baseline_eml"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/edt_1"
+        android:id="@+id/edt_2"
+        android:layout_margin="30dp"
+        android:background="@drawable/selector"
+        android:padding="15dp"
+        android:drawableStart="@drawable/ic_baseline_str"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/edt_2"
+        android:id="@+id/edt_3"
+        android:layout_margin="30dp"
+        android:background="@drawable/selector"
+        android:padding="15dp"
+        android:drawableStart="@drawable/ic_baseline_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn"
+        android:paddingHorizontal="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/selector"
+        android:text="Button"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
